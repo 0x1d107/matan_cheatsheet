@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\begin{document}
+   \title{Шпаргал\textbf{очка} по матану}
+    \maketitle
+    \section{Гиперболические тригонометрические функции}
+    \begin{itemize}
+	\item $\sinh x = \frac{e^x-e^{-x}}{2}$
+	\item $\cosh x = \frac{e^x+e^{-x}}{2}$
+	\item $\tanh x = \frac{\sinh x}{\cosh x}$
+    \end{itemize}
+	\section{Тригонометрические формулы}
+	\begin{itemize}
+		\item $\sin^2{x} = \frac{1-\cos{2x}}{2}$
+		\item $\cos^2{x} = \frac{1+\cos{2x}}{2}$
+		\item $\sin{x} \cdot \sin{y} = \frac{1}{2}(\cos(x-y) - \cos(x+y))$
+		\item $\cos{x} \cdot \cos{y} = \frac{1}{2}(\cos(x-y) + \cos(x+y))$
+		\item $\sin{x} \cdot \cos{y} = \frac{1}{2}(\sin(x-y) + \sin(x+y))$
+		\item $\sin{x} + \sin{y} = 2\sin{\frac{x+y}{2}}\cos{\frac{x-y}{2}}$
+		\item $\sin{x} - \sin{y} = 2\cos{\frac{x+y}{2}}\sin{\frac{x-y}{2}}$
+		\item $\cos{x} + \cos{y} = 2\cos{\frac{x+y}{2}}\cos{\frac{x-y}{2}}$
+		\item $\cos{x} - \cos{y} = -2\sin{\frac{x+y}{2}}\sin{\frac{x-y}{2}}$
+	\end{itemize}
+	
+	\section{Бином Ньютона}
+	$$ (a+b)^n = \sum_{k=0}^{n} a^{n-k}b^{k} $$
+    \section{Таблица БМФ при $x \to 0 $}
+    \begin{enumerate}
+	\item $\sin x \sim x$
+	\item $\tan{x} \sim x$
+	\item $\arcsin x \sim x$
+	\item $\arctan x \sim x$
+	\item $1 - \cos{x} \sim \frac{x^2}{ 2}$
+	\item $\ln{(1+x)} \sim x$
+	\item $\log_a{(1+x)} \sim \frac{x}{\ln{a}}$
+	\item $e^x -1 \sim x$
+	\item $a^x-1 \sim x \ln{a}$
+	\item $(1+x)^a-1 \sim ax$
+    \end{enumerate}
+    \section{Мат. индукция}
+    \begin{itemize}
+	\item $1 + 2 + \dots + n = \frac{n(n+1)}{2}$
+	\item $1^2 + 2^2 + \dots + n^2 = \frac{n(n+1)(2n-1)}{6} $	
+    \end{itemize}
+    \section{Замечательные пределы}
+    \subsection{Первый замечательный предел}
+    $$ \lim_{x \to 0} \frac{\sin{x}}{x} = 1 $$
+    \subsection{Второй замечательный предел}
+    $$ \lim_{n \to \infty} \left(1 + \frac{1}{n} \right)^n = e $$
+
+    \section{Производные}
+    \begin{itemize}
+	\item $(f(g(x))' = f'(g(x)) \cdot g'(x)$
+	\item $(f \cdot g)' = f' \cdot g + g' \cdot f$
+	\item $\left( \frac{f}{g} \right)' = \frac{f' \cdot g -g' \cdot f}{g^2}$
+	\item $(f + g)' = f' + g'$
+	\item $(f^n)' = n \cdot f^{n-1} \cdot f'$
+	\item $(\sin{x} )' = \cos{x}$
+	\item $(\cos{x} )' = - \sin{x}$
+	\item $( \tan{x} )' = \frac{1}{\cos^2{x}}$
+	\item $(\arctan x)' = \frac{1}{1+x^2}$
+	\item $(\arcsin x)' = \frac{1}{\sqrt{1-x^2}}$
+	\item $(\arccos x)' = -\frac{1}{\sqrt{1-x^2}}$
+	\item $(\log_a{x})' = \frac{1}{x\ln{a}}$
+	\item $(a^x)'= a^x \cdot \ln{a}$
+	\item $(x^x)'=x^x \cdot ( 1+ \ln{x}$)
+	\item $(\sqrt{1+x^2})' = \frac{x}{\sqrt{x^2+1}}$
+	\item $(\ln(x+\sqrt{1+x^2}))'=\frac{1}{\sqrt{1+x^2}}$
+	\item $\left(\frac{1}{2}\ln\left(\frac{1+x}{1-x}\right)\right)' = \frac{1}{1-x^2}$
+	\end{itemize}
+	\subsection{Производные $n$-ого порядка}
+	Здесь и далее $a^{(n)}$ - $n$-ная производная функции $a(x)$.
+	\begin{itemize}
+		\item $(a^x)^{(n)}=a^x \cdot \ln^n{x} $
+		\item $(\sin{x})^{(n)}=\sin{(x+\frac{\pi n}{2})}$
+		\item $(\cos{x})^{(n)}=\cos{(x+\frac{\pi n}{2})}$
+		\item $(\ln{x})^{(n)}=\frac{(-1)^{(n-1)}\cdot (n-1)!}{x^n}$
+	\end{itemize}
+	\subsection{Формула Лейбница}
+	$$(a\cdot b)^{(n)}=\sum_{k=0}^n C^k_na^{(n-k)}b^{(k)}$$
+	
+	\section{Неопределенные интегралы}
+	\begin{itemize}
+		\item $\int{x^ndx}=\frac{x^{n+1}}{n+1}+C$
+		\item $\int \frac{dx}{x} = \ln{|x|} + C$
+		\item $\int{\frac{dx}{1+x^2}}=\arctan{x}+C$
+		\item $\int{\cos{(x)}}dx = \sin{x} + C$
+		\item $\int{\sin{(x)}}dx = - \cos{x} + C$
+		\item $\int\frac{dx}{\cos^2{x}} = \tan{x} +C$
+		\item $\int\frac{dx}{1+x^2}=\arctan{x} +C$
+		\item $\int\frac{dx}{\sqrt{1-x^2}} = \arcsin x +C$
+		\item $-\int\frac{dx}{\sqrt{1-x^2}} = \arccos x +C$
+		\item $\int\frac{dx}{x\ln{a}} = \log_a{|x|}+C$                                                                                                     
+		\item $\int a^x dx= \frac{a^x}{\ln{a}}+C$
+		\item $\int\frac{x dx}{\sqrt{x^2+1}} = \sqrt{1+x^2}+C$
+		\item $\int\frac{dx}{\sqrt{1+x^2}} = \ln|x+\sqrt{1+x^2}|+C$
+		\item $\int\frac{dx}{\sqrt{1-x^2}} = \ln|x+\sqrt{1-x^2}|+C$
+
+		\item $\int\frac{dx}{1-x^2} = \frac{1}{2}\ln\left|\frac{1+x}{1-x}\right| + C $
+
+	\end{itemize}
+
+	
+\end{document}
